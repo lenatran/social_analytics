@@ -44,7 +44,7 @@ sentiments_df = pd.DataFrame()
 for user in news_accounts:
     
 # Set counter to track tweets
-    counter = 0
+    counter = 1
 
     for x in range(5):
         public_tweets = api.user_timeline(user, page=x)
@@ -144,52 +144,52 @@ sentiments_df.head()
     <tr>
       <th>0</th>
       <td>@BBCWorld</td>
-      <td>Thu Mar 29 07:51:49 +0000 2018</td>
+      <td>Thu Mar 29 08:27:29 +0000 2018</td>
       <td>0.0000</td>
-      <td>0.000</td>
+      <td>0.00</td>
       <td>0.000</td>
       <td>1.000</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
       <td>@BBCWorld</td>
-      <td>Thu Mar 29 06:20:07 +0000 2018</td>
-      <td>0.1680</td>
-      <td>0.060</td>
-      <td>0.000</td>
-      <td>0.940</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>@BBCWorld</td>
-      <td>Thu Mar 29 03:07:47 +0000 2018</td>
-      <td>0.6662</td>
+      <td>Thu Mar 29 08:20:39 +0000 2018</td>
+      <td>-0.3182</td>
+      <td>0.00</td>
       <td>0.223</td>
-      <td>0.000</td>
       <td>0.777</td>
       <td>2</td>
     </tr>
     <tr>
+      <th>2</th>
+      <td>@BBCWorld</td>
+      <td>Thu Mar 29 08:17:00 +0000 2018</td>
+      <td>0.0000</td>
+      <td>0.00</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>3</td>
+    </tr>
+    <tr>
       <th>3</th>
       <td>@BBCWorld</td>
-      <td>Thu Mar 29 02:20:41 +0000 2018</td>
-      <td>-0.4939</td>
-      <td>0.000</td>
-      <td>0.412</td>
-      <td>0.588</td>
-      <td>3</td>
+      <td>Thu Mar 29 07:55:09 +0000 2018</td>
+      <td>0.1779</td>
+      <td>0.11</td>
+      <td>0.084</td>
+      <td>0.806</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>4</th>
       <td>@BBCWorld</td>
-      <td>Thu Mar 29 02:13:36 +0000 2018</td>
-      <td>-0.8720</td>
+      <td>Thu Mar 29 07:51:49 +0000 2018</td>
+      <td>0.0000</td>
+      <td>0.00</td>
       <td>0.000</td>
-      <td>0.553</td>
-      <td>0.447</td>
-      <td>4</td>
+      <td>1.000</td>
+      <td>5</td>
     </tr>
   </tbody>
 </table>
